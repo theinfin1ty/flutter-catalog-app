@@ -9,15 +9,15 @@ class HomePage extends StatelessWidget {
     String name = 'INFIN1TY';    
 
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Catalog App"),
+      appBar: AppBar(
+        title: Text("Catalog App"),
+      ),
+      body: Center(
+        child: Container(
+          child: Text('Welcome to $days days of flutter by $name'),
         ),
-        body: Center(
-          child: Container(
-            child: Text('Welcome to $days days of flutter by $name'),
-          ),
-        ),
-        drawer: Drawer(),
-      );
+      ),
+      drawer: Drawer(),
+    );
   }
 }
